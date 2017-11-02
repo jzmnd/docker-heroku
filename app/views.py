@@ -1,7 +1,6 @@
-from flask import Flask, jsonify
+from app import app
 from sklearn import datasets, svm
-
-app = Flask(__name__)
+from flask import jsonify
 
 # Load Dataset from scikit-learn.
 digits = datasets.load_digits()
